@@ -50,7 +50,7 @@ public class Scheduler {
     			recursiveAction();
     			break;
     		}
-    		System.out.println("How Would You Describe The Event?");
+    		System.out.println("How Would You Describe The Event?"); //FIX SPACES BREAKING EVERYTHING
     		String description = scan.next();
     		System.out.println("What Day Would The Event Be On?\nEnter A Number 1-7");
     		int day = scan.nextInt();
