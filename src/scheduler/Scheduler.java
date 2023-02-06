@@ -49,10 +49,11 @@ public class Scheduler {
     			System.out.println("Error Entering Time\nPlease Try Adding Event Again");
     			recursiveAction();
     			break;
-    		}
-    		System.out.println("How Would You Describe The Event?"); //FIX SPACES BREAKING EVERYTHING
-    		String description = scan.next();
-    		System.out.println("What Day Would The Event Be On?\nEnter A Number 1-7");
+    		} //FIX SPACES BREAKING EVERYTHING
+    		System.out.println("How Would You Describe The Event?");
+    		scan.nextLine();
+    		String description = scan.nextLine();
+    		System.out.println("What Day Would The Event Be On?\nEnter A Number 1-7 (1 Being Monday And 7 Being Sunday)");
     		int day = scan.nextInt();
     		if(day>0 && day<8) {	
     			switch(day) {
@@ -185,7 +186,7 @@ public class Scheduler {
     			recursiveAction();
     			break;
     		}
-    		System.out.println("What Day Is The Event On?\nEnter A Number 1-7");
+    		System.out.println("What Day Is The Event On?\nEnter A Number 1-7 (1 Being Monday And 7 Being Sunday)");
     		int dayr = scan.nextInt();
     		Days dayenum2;
     		if(dayr>0 && dayr<8) {
@@ -233,7 +234,7 @@ recursiveAction();
     		//------------------------------------------------------------------------------------------------------------------------
     		//PRINT(BROKEN)
     	case 3:
-    		System.out.println("What Day Would You Like To View?\nEnter A Number 1-7");
+    		System.out.println("What Day Would You Like To View?\nEnter A Number 1-7 (1 Being Monday And 7 Being Sunday)");
     		int dayv = scan.nextInt();
     		if(dayv>0 && dayv<8) {	
     			switch(dayv) {
